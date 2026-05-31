@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>CozumAI — Mobil, web, AI ve veri çözümleri</title>
+    <meta
+      name="description"
+      content="Mobil uygulama, web sitesi, AI entegrasyonu ve veri analizi / finansal raporlama. Keşiften canlıya, şeffaf süreç ve ölçülebilir teslimat."
+    />
+    <meta property="og:title" content="CozumAI — Mobil, web, AI ve veri" />
+    <meta
+      property="og:description"
+      content="Dört uzmanlık alanında özel yazılım: mobil, web, yapay zeka entegrasyonu ve finansal raporlama panelleri."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cozumai.com" data-og-url />
+    <link rel="canonical" href="https://cozumai.com" data-canonical />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "CozumAI",
+        "description": "Mobil uygulama, web geliştirme, AI entegrasyonu ve veri analizi / finansal raporlama hizmetleri.",
+        "areaServed": { "@type": "Country", "name": "Türkiye" },
+        "url": "https://cozumai.com",
+        "knowsAbout": [
+          "Mobil uygulama geliştirme",
+          "Web uygulama geliştirme",
+          "Yapay zeka entegrasyonu",
+          "Veri analizi",
+          "Finansal raporlama"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+    <header class="site-header" data-header>
+      <div class="container header__inner">
+        <a class="logo" href="#">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__group">
+            <span class="logo__text" data-site-name>CozumAI</span>
+            <span class="logo__tag" data-site-tag>Mobil · Web · AI · Veri</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-nav-toggle
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="visually-hidden">Menüyü aç / kapat</span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-nav>
+          <ul class="site-nav__list">
+            <li><a href="#cozumler">Çözümler</a></li>
+            <li><a href="#portfoy">Portföy</a></li>
+            <li><a href="#yaklasim">Yaklaşım</a></li>
+            <li><a href="#surec">Süreç</a></li>
+            <li><a href="#sss">SSS</a></li>
+            <li><a class="btn btn--small btn--primary" href="#iletisim">Proje anlat</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="icerik">
+      <section class="hero section section--dark" aria-labelledby="hero-baslik">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="bg-grid"></div>
+          <div class="bg-glow bg-glow--one"></div>
+          <div class="bg-glow bg-glow--two"></div>
+        </div>
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow" data-site-tag-hero>Mobil · Web · AI · Veri · Uzaktan</p>
+            <h1 id="hero-baslik" class="hero__title">
+              Dijital ürünlerinizi <span class="accent">tek sorumlu hatla</span> fikirden canlıya taşıyorum.
+            </h1>
+            <p class="hero__lead">
+              Girişimciler ve ekipler için mobil uygulama, kurumsal web, yapay zeka entegrasyonu ve veri /
+              finansal raporlama. Ajans gürültüsü yok; yazılı kapsam, haftalık demo ve şeffaf milestoneler.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#iletisim">Brief gönder</a>
+              <a class="btn btn--ghost" href="#cozumler">Çözümleri incele</a>
+            </div>
+            <p class="hero__trust" data-trust-line>
+              İlk dönüş: iş günü içinde · NDA hazır · Uzaktan, yazılı süreç
+            </p>
+            <ul class="hero__bullets" role="list">
+              <li>Dört uzmanlık alanında net teslim tanımı ve teklif eki</li>
+              <li>Haftalık demo, yazılı geri bildirim ve değişiklik kotası</li>
+              <li>Kaynak kod devri, dokümantasyon ve devretme kontrol listesi</li>
+            </ul>
+          </div>
+          <aside class="hero__aside" aria-label="Özet ve iletişim">
+            <div class="hero__stats reveal" data-stats></div>
+            <div class="panel reveal">
+              <h2 class="panel__title">Doğrudan iletişim</h2>
+              <p class="panel__text">
+                Teklif öncesi kısa görüşme ücretsizdir. Teknik detayları e-posta veya görüntülü görüşmede
+                netleştiririz.
+              </p>
+              <hr class="panel__rule" />
+              <dl class="facts" id="contact-facts">
+                <div>
+                  <dt>E-posta</dt>
+                  <dd>
+                    <a class="link" href="mailto:uygulama.atolyesi@gmail.com" data-email>uygulama.atolyesi@gmail.com</a>
+                  </dd>
+                </div>
+                <div data-phone-row hidden>
+                  <dt>Telefon</dt>
+                  <dd><a class="link" href="#" data-phone-link>—</a></dd>
+                </div>
+                <div>
+                  <dt>Çalışma</dt>
+                  <dd>Uzaktan · TR saati · Yazılı karar kaydı</dd>
+                </div>
+              </dl>
+              <div class="panel__channels" data-panel-channels></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="pillars section section--compact" aria-label="Uzmanlık alanları">
+        <div class="container">
+          <ul class="pillars__list" role="list">
+            <li><a href="#cozum-mobil">Mobil uygulama</a></li>
+            <li><a href="#cozum-web">Web &amp; SaaS</a></li>
+            <li><a href="#cozum-ai">AI entegrasyon</a></li>
+            <li><a href="#cozum-veri">Veri &amp; finans</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="cozumler" class="section section--tint" aria-labelledby="cozumler-baslik">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="section__label">Çözümler</p>
+            <h2 id="cozumler-baslik" class="section__title">İhtiyacınıza göre dört uzmanlık alanı</h2>
+            <p class="section__intro">
+              Her alanın çıktıları teklif ekinde madde madde tanımlanır. Tek projede birden fazla alan birleştirilebilir
+              — örneğin web paneli + mobil saha uygulaması + AI destekli raporlama.
+            </p>
+          </div>
+          <div class="solutions" data-services-root>
+            <article id="cozum-mobil" class="solution reveal" data-service="mobil">
+              <div class="solution__head">
+                <span class="solution__index" aria-hidden="true">01</span>
+                <div class="solution__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.75" />
+                    <path d="M10 18h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3 class="solution__title">Mobil uygulama geliştirme</h3>
+              </div>
+              <p class="solution__text">
+                iOS ve Android için native hissi veren, mağaza onayına hazır uygulamalar. MVP’den kurumsal sürüme;
+                çevrimdışı senkron ve saha senaryolarında kanıtlanmış teslimat.
+              </p>
+              <ul class="solution__list">
+                <li>Flutter / React Native veya platform-native</li>
+                <li>Push, biyometrik giriş, derin link</li>
+                <li>App Store &amp; Play Console yayın desteği</li>
+              </ul>
+              <div class="solution__tags">
+                <span>Flutter</span><span>React Native</span><span>Swift</span><span>Kotlin</span>
+              </div>
+              <a class="solution__link" href="#portfoy" data-portfolio-filter="mobil">Mobil işlere bak →</a>
+            </article>
+
+            <article id="cozum-web" class="solution reveal" data-service="web">
+              <div class="solution__head">
+                <span class="solution__index" aria-hidden="true">02</span>
+                <div class="solution__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.75" />
+                    <path d="M3 9h18" stroke="currentColor" stroke-width="1.75" />
+                  </svg>
+                </div>
+                <h3 class="solution__title">Web sitesi &amp; web uygulaması</h3>
+              </div>
+              <p class="solution__text">
+                Kurumsal vitrin, SaaS panelleri ve müşteri portalları. Performans, erişilebilirlik ve SEO temel
+                gereksinimlerdir — bu site de aynı standartlarla inşa edilmiştir.
+              </p>
+              <ul class="solution__list">
+                <li>Next.js / React ile hızlı arayüz</li>
+                <li>Yönetim paneli, rol tabanlı erişim</li>
+                <li>Barındırma, CI/CD, domain yapılandırması</li>
+              </ul>
+              <div class="solution__tags">
+                <span>Next.js</span><span>React</span><span>TypeScript</span><span>Node.js</span>
+              </div>
+              <a class="solution__link" href="#portfoy" data-portfolio-filter="web">Web işlere bak →</a>
+            </article>
+
+            <article id="cozum-ai" class="solution reveal" data-service="ai">
+              <div class="solution__head">
+                <span class="solution__index" aria-hidden="true">03</span>
+                <div class="solution__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 3a4 4 0 00-4 4v1H7a3 3 0 00-3 3v2a3 3 0 003 3h1v1a4 4 0 008 0v-1h1a3 3 0 003-3v-2a3 3 0 00-3-3h-1V7a4 4 0 00-4-4z"
+                      stroke="currentColor"
+                      stroke-width="1.75"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="solution__title">AI entegrasyon hizmetleri</h3>
+              </div>
+              <p class="solution__text">
+                LLM ve otomasyon ile iş süreçlerinizi hızlandırın. Mevcut ürüne güvenli entegrasyon; maliyet ve kalite
+                kontrolü yazılı süreçle yönetilir.
+              </p>
+              <ul class="solution__list">
+                <li>Sohbet asistanı, doküman Q&amp;A, özetleme</li>
+                <li>API / webhook ile ürün içi AI</li>
+                <li>Prompt, güvenlik ve kullanım limitleri</li>
+              </ul>
+              <div class="solution__tags">
+                <span>OpenAI</span><span>Anthropic</span><span>RAG</span><span>n8n</span>
+              </div>
+              <a class="solution__link" href="#portfoy" data-portfolio-filter="ai">AI işlere bak →</a>
+            </article>
+
+            <article id="cozum-veri" class="solution reveal" data-service="veri">
+              <div class="solution__head">
+                <span class="solution__index" aria-hidden="true">04</span>
+                <div class="solution__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 19V5M10 19V9M16 19V13M22 19V7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3 class="solution__title">Veri analizi &amp; finansal raporlama</h3>
+              </div>
+              <p class="solution__text">
+                Ham veriyi karar verilebilir panolara dönüştürün. Excel, ERP veya API kaynaklarından ETL; bütçe, nakit
+                akışı ve KPI takibi tek ekranda.
+              </p>
+              <ul class="solution__list">
+                <li>Canlı dashboard ve dönemsel raporlar</li>
+                <li>Finansal model ve senaryo analizi</li>
+                <li>Otomatik veri yenileme ve uyarılar</li>
+              </ul>
+              <div class="solution__tags">
+                <span>PostgreSQL</span><span>Python</span><span>Power BI</span><span>Metabase</span>
+              </div>
+              <a class="solution__link" href="#portfoy" data-portfolio-filter="veri">Veri işlere bak →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="neden-baslik">
+        <div class="container outcomes reveal">
+          <div class="outcomes__copy">
+            <p class="section__label">Neden bu model</p>
+            <h2 id="neden-baslik" class="section__title">Ölçülebilir sonuç, görünür süreç</h2>
+            <p class="section__intro">
+              Profesyonel ajansların ortak noktası: net kapsam, vaka çalışmaları ve tek iletişim hattı. Aynı disiplini
+              bağımsız geliştirici esnekliğiyle sunuyorum.
+            </p>
+          </div>
+          <ul class="outcomes__grid" role="list">
+            <li>
+              <strong>Keşif zorunlu</strong>
+              <span>Kapsam dışı ve riskler kod öncesi yazılır; sürpriz maliyet azalır.</span>
+            </li>
+            <li>
+              <strong>Milestoneli ödeme</strong>
+              <span>Her aşama onaylandıktan sonra ilerleme; bütçe kontrol altında.</span>
+            </li>
+            <li>
+              <strong>Çok disiplinli teslim</strong>
+              <span>Mobil + web + AI + veri tek projede entegre planlanabilir.</span>
+            </li>
+            <li>
+              <strong>Devredilebilir ürün</strong>
+              <span>Kod, rehber, API şeması ve erişim listesi teslim paketinde.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="yaklasim" class="section section--tint" aria-labelledby="yaklasim-baslik">
+        <div class="container split reveal">
+          <div class="split__intro">
+            <p class="section__label">Yaklaşım</p>
+            <h2 id="yaklasim-baslik" class="section__title">Şeffaflık ürün hızından önce gelir</h2>
+            <p class="section__intro">
+              Özel yazılımda gecikmenin çoğu konuşulmamış varsayımdan kaynaklanır. Kapsam değişimi yazılı ek
+              protokolle yönetilir; AI ve veri projelerinde veri gizliliği ve model maliyeti baştan tanımlanır.
+            </p>
+          </div>
+          <div class="split__panels">
+            <div class="info-panel">
+              <h3 class="info-panel__title">Taahhütler</h3>
+              <ul class="checklist">
+                <li>Yazılı teklif ve sözleşme; teslim tanımı ekte</li>
+                <li>Milestoneli ödeme; faturalandırma</li>
+                <li>Haftalık durum özeti ve demo kaydı</li>
+                <li>Kaynak kod devri ve lisans envanteri</li>
+              </ul>
+            </div>
+            <div class="info-panel info-panel--muted">
+              <h3 class="info-panel__title">Şu an kapsam dışı</h3>
+              <p class="info-panel__lede">
+                Yanlış beklentiyi önlemek için net söylüyorum; ihtiyaç olursa güvenilir ortak öneririm.
+              </p>
+              <ul class="checklist checklist--x">
+                <li>Sadece ücretsiz fikir danışmanlığı</li>
+                <li>7/24 kritik hat desteği (SLA’sız)</li>
+                <li>Tam marka / kurumsal kimlik paketi</li>
+                <li>Hukuk, muhasebe, reklam yönetimi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact" aria-labelledby="teslim-baslik">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="section__label">Teslim</p>
+            <h2 id="teslim-baslik" class="section__title">Devretmede elinizin altında olacaklar</h2>
+          </div>
+          <ul class="deliver-grid reveal" role="list">
+            <li>Kaynak kod deposu ve dal stratejisi özeti</li>
+            <li>Yerel ve üretim ortamı kurulum rehberi</li>
+            <li>API sözleşmesi veya uç listesi</li>
+            <li>AI projelerinde prompt / model envanteri</li>
+            <li>Veri projelerinde ETL şeması ve rapor sözlüğü</li>
+            <li>Mağaza / domain / gizli anahtar devri listesi</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="surec" class="section section--tint" aria-labelledby="surec-baslik">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="section__label">Süreç</p>
+            <h2 id="surec-baslik" class="section__title">Görünür adımlar, ölçülebilir ilerleme</h2>
+            <p class="section__intro">
+              Her aşamanın çıktısı ve onay noktası vardır. Onay gelmeden bir sonraki aşamaya geçilmez.
+            </p>
+          </div>
+          <ol class="timeline-pro reveal">
+            <li class="timeline-pro__step">
+              <span class="timeline-pro__badge">01</span>
+              <div class="timeline-pro__body">
+                <h3>Ön görüşme (30 dk)</h3>
+                <p>Hedef, kısıtlar, hangi çözüm alanının öncelikli olduğu ve başarı ölçütü.</p>
+              </div>
+            </li>
+            <li class="timeline-pro__step">
+              <span class="timeline-pro__badge">02</span>
+              <div class="timeline-pro__body">
+                <h3>Keşif &amp; teklif</h3>
+                <p>Kapsam, riskler, zaman ve maliyet. Mobil / web / AI / veri kalemleri ayrı satırlarda.</p>
+              </div>
+            </li>
+            <li class="timeline-pro__step">
+              <span class="timeline-pro__badge">03</span>
+              <div class="timeline-pro__body">
+                <h3>Geliştirme sprintleri</h3>
+                <p>Haftalık demo, yazılı geri bildirim, değişiklik kotası.</p>
+              </div>
+            </li>
+            <li class="timeline-pro__step">
+              <span class="timeline-pro__badge">04</span>
+              <div class="timeline-pro__body">
+                <h3>Ön üretim &amp; kabul</h3>
+                <p>Kabul kriterleri, performans ve güvenlik kontrolleri.</p>
+              </div>
+            </li>
+            <li class="timeline-pro__step">
+              <span class="timeline-pro__badge">05</span>
+              <div class="timeline-pro__body">
+                <h3>Yayın &amp; devretme</h3>
+                <p>Kod, dokümantasyon, erişimler. İsteğe bağlı bakım sözleşmesi.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="portfoy" class="section" aria-labelledby="portfoy-baslik">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="section__label">Portföy</p>
+            <h2 id="portfoy-baslik" class="section__title">Problem → çözüm → ölçülebilir sonuç</h2>
+            <p class="section__intro">
+              Aşağıdaki örnekler gerçek proje tiplerinizi yansıtır. Müşteri adı ve ekran görüntüleri NDA ile
+              maskelenebilir; rakamlar proje bazında güncellenmelidir.
+            </p>
+          </div>
+
+          <div class="portfolio-filter reveal" role="tablist" aria-label="Portföy filtresi" data-portfolio-tabs>
+            <button type="button" class="portfolio-filter__btn is-active" data-filter="all" aria-pressed="true">Tümü</button>
+            <button type="button" class="portfolio-filter__btn" data-filter="mobil" aria-pressed="false">Mobil</button>
+            <button type="button" class="portfolio-filter__btn" data-filter="web" aria-pressed="false">Web</button>
+            <button type="button" class="portfolio-filter__btn" data-filter="ai" aria-pressed="false">AI</button>
+            <button type="button" class="portfolio-filter__btn" data-filter="veri" aria-pressed="false">Veri</button>
+          </div>
+
+          <div class="cards cards--2 portfolio-grid" data-portfolio-grid>
+            <article class="case case--rich reveal" data-category="web">
+              <div class="case__top">
+                <div class="case__meta">
+                  <span class="pill">Web · SaaS</span>
+                  <span class="pill pill--muted">Randevu &amp; ödeme</span>
+                </div>
+                <div class="case__metrics" role="presentation">
+                  <div><span class="case__metric-val">−38%</span><span class="case__metric-lbl">manuel iş</span></div>
+                  <div><span class="case__metric-val">6 hf.</span><span class="case__metric-lbl">MVP süresi</span></div>
+                </div>
+              </div>
+              <h3 class="case__title">Randevu ve ön ödemeli hizmet platformu</h3>
+              <p class="case__text">
+                <strong>Sorun:</strong> Telefon ve mesaj trafiği, ödeme tahsilatı dağınık.
+                <strong>Çözüm:</strong> Çift taraflı panel, takvim senkronu, online ön ödeme ve yönetici raporları.
+                <strong>Sonuç:</strong> Randevu hattı dijitalleşti; operasyon ekibi tekrarlayan işleri azalttı.
+              </p>
+              <p class="case__note">Rol: uçtan uca geliştirme · Web + API</p>
+            </article>
+
+            <article class="case case--rich reveal" data-category="mobil">
+              <div class="case__top">
+                <div class="case__meta">
+                  <span class="pill">Mobil</span>
+                  <span class="pill pill--muted">Saha · çevrimdışı</span>
+                </div>
+                <div class="case__metrics" role="presentation">
+                  <div><span class="case__metric-val">0</span><span class="case__metric-lbl">kritik veri kaybı</span></div>
+                  <div><span class="case__metric-val">Store</span><span class="case__metric-lbl">onaylı sürüm</span></div>
+                </div>
+              </div>
+              <h3 class="case__title">Çevrimdışı-first saha uygulaması</h3>
+              <p class="case__text">
+                <strong>Sorun:</strong> Bağlantısız bölgelerde senkron ve yetki karmaşası.
+                <strong>Çözüm:</strong> Yerel kuyruk, çatışma çözümü, rol tabanlı yetkilendirme.
+                <strong>Sonuç:</strong> Saha ekibi günlük operasyonu uygulama üzerinden tamamladı.
+              </p>
+              <p class="case__note">Rol: mobil mimari + mağaza yayını</p>
+            </article>
+
+            <article class="case case--rich reveal" data-category="ai">
+              <div class="case__top">
+                <div class="case__meta">
+                  <span class="pill">AI</span>
+                  <span class="pill pill--muted">Doküman Q&amp;A</span>
+                </div>
+                <div class="case__metrics" role="presentation">
+                  <div><span class="case__metric-val">−60%</span><span class="case__metric-lbl">arama süresi</span></div>
+                  <div><span class="case__metric-val">RAG</span><span class="case__metric-lbl">bilgi tabanı</span></div>
+                </div>
+              </div>
+              <h3 class="case__title">Kurumsal doküman asistanı</h3>
+              <p class="case__text">
+                <strong>Sorun:</strong> Dağınık PDF ve prosedürler; ekip doğru bilgiye geç ulaşıyordu.
+                <strong>Çözüm:</strong> RAG tabanlı sohbet, erişim katmanları ve kullanım kotası.
+                <strong>Sonuç:</strong> İç destek taleplerinde ilk yanıt süresi kısaldı.
+              </p>
+              <p class="case__note">Rol: entegrasyon mimarisi · Mevcut panele embed</p>
+            </article>
+
+            <article class="case case--rich reveal" data-category="veri">
+              <div class="case__top">
+                <div class="case__meta">
+                  <span class="pill">Veri</span>
+                  <span class="pill pill--muted">Finansal rapor</span>
+                </div>
+                <div class="case__metrics" role="presentation">
+                  <div><span class="case__metric-val">1 gün</span><span class="case__metric-lbl">kapanış süresi</span></div>
+                  <div><span class="case__metric-val">12+</span><span class="case__metric-lbl">canlı KPI</span></div>
+                </div>
+              </div>
+              <h3 class="case__title">Yönetim panosu — nakit akışı &amp; bütçe</h3>
+              <p class="case__text">
+                <strong>Sorun:</strong> Excel tabanlı aylık kapanışlar hata ve gecikmeye açıktı.
+                <strong>Çözüm:</strong> ERP + banka verisi ETL, otomatik yenileme ve senaryo karşılaştırması.
+                <strong>Sonuç:</strong> Yönetim tek ekrandan dönemsel raporu izlemeye başladı.
+              </p>
+              <p class="case__note">Rol: veri modeli + dashboard · Python / PostgreSQL</p>
+            </article>
+          </div>
+
+          <figure class="quote reveal">
+            <blockquote>
+              “Tek geliştiriciyle çalışmak endişeliydik; haftalık demolar ve yazılı kapsam sayesinde süreç
+              ajans kadar düzenli ilerledi.”
+            </blockquote>
+            <figcaption>Proje sponsoru · KOBİ · Web + operasyon paneli</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--compact" aria-labelledby="stack-baslik">
+        <div class="container stack reveal">
+          <h2 id="stack-baslik" class="stack__title">Teknoloji yığını</h2>
+          <p class="stack__note">
+            Projenin riski ve ekibinizin bilgisi önceliklidir; moda teknoloji yerine sürdürülebilir seçim.
+          </p>
+          <ul class="stack__tags" role="list">
+            <li>TypeScript</li>
+            <li>React / Next.js</li>
+            <li>Flutter</li>
+            <li>Node.js · Python</li>
+            <li>PostgreSQL</li>
+            <li>OpenAI · RAG</li>
+            <li>Docker · CI/CD</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="sss" class="section section--tint" aria-labelledby="sss-baslik">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="section__label">SSS</p>
+            <h2 id="sss-baslik" class="section__title">Sık sorulanlar</h2>
+          </div>
+          <div class="faq faq--two" data-accordion>
+            <details class="faq__item reveal">
+              <summary>Hangi hizmet alanlarında çalışıyorsunuz?</summary>
+              <p>
+                Mobil uygulama, web sitesi / web uygulaması, AI entegrasyonu ve veri analizi / finansal raporlama.
+                Tek projede birden fazla alan birleştirilebilir; teklifte her alan ayrı satır olarak görünür.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>Fiyatlandırma nasıl belirleniyor?</summary>
+              <p>
+                Keşif sonrası sabit proje bedeli veya sprint bazlı ücretlendirme. AI ve veri projelerinde veri
+                hacmi, model kullanımı ve rapor karmaşıklığı maliyeti etkiler.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>AI projelerinde veri güvenliği?</summary>
+              <p>
+                Hassas veriler için on-premise veya bölge kısıtlı API, erişim logları ve PII maskeleme planlanır.
+                Müşteri verisi model eğitimi için kullanılmaz (sözleşmede yazılır).
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>Finansal raporlama için hangi kaynaklar?</summary>
+              <p>
+                Excel, Google Sheets, ERP (Logo, Netsis vb.), banka API veya CSV export. Hedef: tek doğruluk
+                kaynağı ve otomatik yenilenen panolar.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>Ödeme planı nasıl işler?</summary>
+              <p>Tipik: %30–40 başlangıç, milestone’larda ara ödemeler, kabul sonrası kapanış.</p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>Kaynak kod ve fikri mülkiyet?</summary>
+              <p>Ödemeler tamamlandıktan sonra devredilen bileşenler ve lisanslar sözleşmede listelenir.</p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>NDA ve gizlilik?</summary>
+              <p>Karşılıklı NDA standarttır; kurumsal şartnamelere uyum sağlanır.</p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>Yayın sonrası destek?</summary>
+              <p>İlk 30 gün stabilizasyon teklifte tanımlanabilir; sonrası retainer veya talep bazlı destek.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim" class="section section--dark cta-section" aria-labelledby="iletisim-baslik">
+        <div class="container cta">
+          <div class="cta__copy reveal">
+            <p class="section__label">İletişim</p>
+            <h2 id="iletisim-baslik" class="section__title">Projenizi özetleyin, geri döneyim</h2>
+            <p class="section__intro">
+              Hangi çözüm alanında ihtiyacınız olduğunu seçin; brief e-postanıza otomatik eklenir.
+            </p>
+            <ul class="cta__list">
+              <li data-cta-line-response>Beklenen yanıt: iş günü içinde ilk dönüş</li>
+              <li data-cta-line-calendar hidden>
+                Ön görüşme için <a class="link" href="#" data-calendly-inline>takvimden</a> randevu alabilirsiniz.
+              </li>
+            </ul>
+            <p class="cta__direct" data-cta-direct hidden></p>
+          </div>
+          <div class="cta__form-wrap reveal">
+            <div class="cta__cal-wrap" data-calendly-wrap hidden>
+              <a class="btn btn--ghost btn--block" href="#" data-calendly-primary rel="noopener noreferrer"
+                >Takvimden 20 dk. ön görüşme</a
+              >
+            </div>
+            <form class="form" id="brief-form" data-brief-form>
+              <div class="form__row">
+                <label>
+                  Ad Soyad
+                  <input name="name" type="text" autocomplete="name" required />
+                </label>
+                <label>
+                  Şirket (isteğe bağlı)
+                  <input name="company" type="text" autocomplete="organization" />
+                </label>
+              </div>
+              <div class="form__row">
+                <label>
+                  E-posta
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+                <label>
+                  İlgilendiğiniz alan
+                  <select name="serviceArea" required>
+                    <option value="" disabled selected>Seçin</option>
+                    <option value="Mobil uygulama geliştirme">Mobil uygulama geliştirme</option>
+                    <option value="Web sitesi / web uygulaması">Web sitesi / web uygulaması</option>
+                    <option value="AI entegrasyon hizmetleri">AI entegrasyon hizmetleri</option>
+                    <option value="Veri analizi / finansal raporlama">Veri analizi / finansal raporlama</option>
+                    <option value="Birden fazla alan">Birden fazla alan</option>
+                    <option value="Henüz net değil">Henüz net değil</option>
+                  </select>
+                </label>
+              </div>
+              <label>
+                Proje özeti
+                <textarea
+                  name="summary"
+                  rows="6"
+                  required
+                  placeholder="Hedef kullanıcı, ana problem, mevcut sistemler (ERP, Excel, API), zaman ve bütçe beklentisi?"
+                ></textarea>
+              </label>
+              <div class="form__row">
+                <label>
+                  Bütçe aralığı
+                  <select name="budget" required>
+                    <option value="" disabled selected>Seçin</option>
+                    <option>100.000 – 250.000 TL</option>
+                    <option>250.000 – 500.000 TL</option>
+                    <option>500.000 TL üzeri</option>
+                    <option>Henüz net değil</option>
+                  </select>
+                </label>
+                <label>
+                  Başlangıç hedefi
+                  <select name="start" required>
+                    <option value="" disabled selected>Seçin</option>
+                    <option>2 hafta içinde</option>
+                    <option>1 ay içinde</option>
+                    <option>Esnek</option>
+                  </select>
+                </label>
+              </div>
+              <label class="checkbox">
+                <input name="kvkk" type="checkbox" required />
+                <span>Kişisel verilerimin yalnızca tekliflendirme ve iletişim için işlenmesine onay veriyorum.</span>
+              </label>
+              <button class="btn btn--primary btn--block" type="submit">E-postayı aç ve gönder</button>
+              <p class="form__hint" data-form-hint role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <p class="footer__brand" data-site-name>CozumAI</p>
+          <p class="footer__tag" data-site-tag-footer>Mobil · Web · AI · Veri · Uzaktan · Türkiye</p>
+        </div>
+        <nav class="footer__nav" aria-label="Alt bağlantılar">
+          <a href="#cozumler">Çözümler</a>
+          <a href="#portfoy">Portföy</a>
+          <a href="#surec">Süreç</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+        <div class="footer__links">
+          <a class="link" href="#" data-linkedin hidden>LinkedIn</a>
+          <a class="link" href="#" rel="noopener noreferrer" data-github hidden>GitHub</a>
+        </div>
+        <p class="footer__legal">
+          © <span data-year></span> <span data-site-name>CozumAI</span>. Tüm hakları saklıdır.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/config.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
