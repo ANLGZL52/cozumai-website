@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://cozumai.com/sitemap.txt
 Sitemap: https://cozumai.com/sitemap.xml
