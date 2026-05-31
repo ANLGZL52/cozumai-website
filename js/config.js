@@ -6,7 +6,7 @@
 window.SITE_CONFIG = {
   brandName: "CozumAI",
   tagline: "Mobil · Web · AI · Veri",
-  email: "uygulama.atolyesi@gmail.com",
+  email: "anlgzl52@gmail.com",
   /** Canlı site — domain bağlandıktan sonra https://cozumai.com */
   siteUrl: "https://cozumai.com",
   linkedInUrl: "",
