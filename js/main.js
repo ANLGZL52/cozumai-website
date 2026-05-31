@@ -245,82 +245,78 @@
 
   if (form) {
     const submitBtn = form.querySelector('button[type="submit"]');
-    const subjectField = form.querySelector("[data-form-subject]");
-    const nextField = form.querySelector("[data-form-next]");
-
-    if (cfg.email) {
-      form.action = `https://formsubmit.co/${encodeURIComponent(cfg.email)}`;
-    }
-    if (nextField && cfg.siteUrl) {
-      nextField.value = `${cfg.siteUrl.replace(/\/$/, "")}/?form=ok#iletisim`;
-    }
-
-    if (new URLSearchParams(window.location.search).get("form") === "ok") {
-      if (hint) {
-        hint.textContent = "Talebiniz alındı. İş günü içinde dönüş yapılacaktır.";
-      }
-      window.history.replaceState({}, "", `${window.location.pathname}#iletisim`);
-    }
 
     form.addEventListener("submit", async (e) => {
-      const data = new FormData(form);
-      const name = String(data.get("name") || "").trim();
-      const company = String(data.get("company") || "").trim();
-      const email = String(data.get("email") || "").trim();
-      const phone = String(data.get("phone") || "").trim();
-      const summary = String(data.get("summary") || "").trim();
-      const budget = String(data.get("budget") || "").trim();
-      const start = String(data.get("start") || "").trim();
-      const serviceArea = String(data.get("service_area") || "").trim();
+      e.preventDefault();
 
-      if (subjectField && name) {
-        subjectField.value = `Proje talebi — ${name}`;
+      const data = new FormData(form);
+      const payload = {
+        name: String(data.get("name") || "").trim(),
+        company: String(data.get("company") || "").trim(),
+        email: String(data.get("email") || "").trim(),
+        phone: String(data.get("phone") || "").trim(),
+        summary: String(data.get("summary") || "").trim(),
+        budget: String(data.get("budget") || "").trim(),
+        start: String(data.get("start") || "").trim(),
+        service_area: String(data.get("service_area") || "").trim(),
+      };
+
+      if (!payload.name || !payload.email || !payload.phone || !payload.summary || !payload.service_area) {
+        if (hint) hint.textContent = "Lütfen zorunlu alanları doldurun.";
+        return;
       }
 
-      if (cfg.formAccessKey) {
-        e.preventDefault();
-        const subject = subjectField ? subjectField.value : `Proje talebi — ${name}`;
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Gönderiliyor…";
+      }
+      if (hint) hint.textContent = "";
 
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.textContent = "Gönderiliyor…";
-        }
-        if (hint) hint.textContent = "";
+      try {
+        let result;
 
-        try {
+        if (cfg.formAccessKey) {
           const res = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: { "Content-Type": "application/json", Accept: "application/json" },
             body: JSON.stringify({
               access_key: cfg.formAccessKey,
-              subject,
-              from_name: name,
-              email,
-              phone,
-              message: summary,
-              company: company || "—",
-              service_area: serviceArea,
-              budget,
-              start,
+              subject: `Proje talebi — ${payload.name}`,
+              from_name: payload.name,
+              email: payload.email,
+              phone: payload.phone,
+              message: payload.summary,
+              company: payload.company || "—",
+              service_area: payload.service_area,
+              budget: payload.budget,
+              start: payload.start,
             }),
           });
-          const result = await res.json();
-          if (!result.success) throw new Error("Gönderilemedi");
+          result = await res.json();
+        } else {
+          const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(payload),
+          });
+          result = await res.json();
+        }
 
-          form.reset();
-          if (hint) {
-            hint.textContent = "Talebiniz alındı. İş günü içinde dönüş yapılacaktır.";
-          }
-        } catch {
-          if (hint) {
-            hint.textContent =
-              "Gönderim başarısız. Lütfen doğrudan e-posta veya telefon ile ulaşın.";
-          }
-        } finally {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Gönder";
-          }
+        if (!result.success) throw new Error(result.message || "Gönderilemedi");
+
+        form.reset();
+        if (hint) {
+          hint.textContent = "Talebiniz alındı. İş günü içinde dönüş yapılacaktır.";
+        }
+      } catch {
+        if (hint) {
+          hint.textContent =
+            "Gönderim başarısız. Lütfen doğrudan e-posta veya telefon ile ulaşın.";
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Gönder";
         }
       }
     });
