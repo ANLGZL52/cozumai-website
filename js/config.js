@@ -8,7 +8,7 @@ window.SITE_CONFIG = {
   tagline: "Mobil · Web · AI · Veri",
   email: "anlgzl52@gmail.com",
   /** https://web3forms.com → Create Access Key (anlgzl52@gmail.com) */
-  formAccessKey: "",
+  formAccessKey: "8b7a975b-d819-4bb5-bb5c-7494962c6225",
   /** Canlı site — domain bağlandıktan sonra https://cozumai.com */
   siteUrl: "https://cozumai.com",
   linkedInUrl: "",
