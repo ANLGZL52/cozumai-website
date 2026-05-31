@@ -1,0 +1,3 @@
+# Cloudflare Pages — statik site, build yok
+name = "cozumai"
+pages_build_output_dir = "."
