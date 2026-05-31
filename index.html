@@ -594,7 +594,7 @@
             <p class="section__label">İletişim</p>
             <h2 id="iletisim-baslik" class="section__title">Projenizi özetleyin, geri döneyim</h2>
             <p class="section__intro">
-              Hangi çözüm alanında ihtiyacınız olduğunu seçin; brief e-postanıza otomatik eklenir.
+              Hangi çözüm alanında ihtiyacınız olduğunu seçin; formu gönderdiğinizde bilgileriniz doğrudan bize iletilir.
             </p>
             <ul class="cta__list">
               <li data-cta-line-response>Beklenen yanıt: iş günü içinde ilk dönüş</li>
@@ -610,7 +610,18 @@
                 >Takvimden 20 dk. ön görüşme</a
               >
             </div>
-            <form class="form" id="brief-form" data-brief-form>
+            <form
+              class="form"
+              id="brief-form"
+              data-brief-form
+              action="https://formsubmit.co/anlgzl52@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_next" value="https://cozumai.com/?form=ok#iletisim" data-form-next />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="CozumAI proje talebi" data-form-subject />
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden aria-hidden="true" />
               <div class="form__row">
                 <label>
                   Ad Soyad
@@ -627,8 +638,20 @@
                   <input name="email" type="email" autocomplete="email" required />
                 </label>
                 <label>
-                  İlgilendiğiniz alan
-                  <select name="serviceArea" required>
+                  Telefon
+                  <input
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                    placeholder="+90 5XX XXX XX XX"
+                  />
+                </label>
+              </div>
+              <label>
+                İlgilendiğiniz alan
+                <select name="service_area" required>
                     <option value="" disabled selected>Seçin</option>
                     <option value="Mobil uygulama geliştirme">Mobil uygulama geliştirme</option>
                     <option value="Web sitesi / web uygulaması">Web sitesi / web uygulaması</option>
@@ -637,8 +660,7 @@
                     <option value="Birden fazla alan">Birden fazla alan</option>
                     <option value="Henüz net değil">Henüz net değil</option>
                   </select>
-                </label>
-              </div>
+              </label>
               <label>
                 Proje özeti
                 <textarea
@@ -703,7 +725,7 @@
       </div>
     </footer>
 
-    <script src="js/config.js?v=4" defer></script>
-    <script src="js/main.js?v=4" defer></script>
+    <script src="js/config.js?v=5" defer></script>
+    <script src="js/main.js?v=5" defer></script>
   </body>
 </html>
