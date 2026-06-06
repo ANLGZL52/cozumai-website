@@ -1,3 +1,9 @@
+/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/css/*
+  Cache-Control: public, max-age=300, must-revalidate
+
 /sitemap.txt
   Content-Type: text/plain; charset=UTF-8
   Cache-Control: public, max-age=3600

@@ -281,6 +281,11 @@ a {
   overflow: visible;
 }
 
+.logo__mark--img {
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+
 .logo__cozum {
   color: #f1f5f9;
 }
@@ -1772,7 +1777,6 @@ a {
   position: relative;
   width: min(100%, 480px);
   height: 420px;
-  perspective: 1000px;
 }
 
 .hero__collage-ring {
@@ -1820,10 +1824,11 @@ a {
   place-items: center;
 }
 
-.hero__collage-logo svg {
+.hero__collage-logo img {
   width: 100%;
   height: 100%;
-  overflow: visible;
+  object-fit: contain;
+  mix-blend-mode: screen;
   filter:
     drop-shadow(0 0 28px rgba(34, 211, 238, 0.65))
     drop-shadow(0 0 56px rgba(37, 99, 235, 0.35));
@@ -1854,8 +1859,8 @@ a {
 .hero__panel-screen {
   width: 100%;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(155deg, rgba(17, 24, 39, 0.94), rgba(11, 16, 32, 0.88));
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  background: linear-gradient(155deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.92));
   box-shadow:
     0 20px 44px rgba(0, 0, 0, 0.5),
     0 0 24px rgba(6, 182, 212, 0.1);
@@ -1891,7 +1896,7 @@ a {
   top: 2%;
   left: 2%;
   width: 112px;
-  transform: rotateY(-14deg) rotateX(8deg) rotateZ(-10deg);
+  transform: rotate(-10deg);
 }
 
 .hero__panel--mobil .hero__panel-screen {
@@ -1902,7 +1907,7 @@ a {
   top: 8%;
   right: 0;
   width: 148px;
-  transform: rotateY(16deg) rotateX(6deg) rotateZ(8deg);
+  transform: rotate(8deg);
 }
 
 .hero__panel--web .hero__panel-screen {
@@ -1913,14 +1918,14 @@ a {
   bottom: 14%;
   right: 2%;
   width: 120px;
-  transform: rotateY(12deg) rotateZ(5deg);
+  transform: rotate(5deg);
 }
 
 .hero__panel--veri {
   bottom: 6%;
   left: 6%;
   width: 132px;
-  transform: rotateY(-10deg) rotateZ(-6deg);
+  transform: rotate(-6deg);
 }
 
 .hero__panel-screen--ai {
