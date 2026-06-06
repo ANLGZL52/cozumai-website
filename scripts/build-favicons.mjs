@@ -7,7 +7,7 @@ const svg = readFileSync(new URL("../favicon.svg", import.meta.url));
 function renderPng(size) {
   const resvg = new Resvg(svg, {
     fitTo: { mode: "width", value: size },
-    background: "#0B1020",
+    background: "#06B6D4",
   });
   return resvg.render().asPng();
 }
