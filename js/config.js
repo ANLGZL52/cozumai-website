@@ -4,24 +4,25 @@
  * =============================================================================
  */
 window.SITE_CONFIG = {
-  brandName: "CozumAI",
-  tagline: "Mobil · Web · AI · Veri",
+  brandName: "ÇözümAI",
+  tagline: "MOBİL · WEB · AI · VERİ",
   email: "anlgzl52@gmail.com",
   /** https://web3forms.com → Create Access Key (anlgzl52@gmail.com) */
   formAccessKey: "8b7a975b-d819-4bb5-bb5c-7494962c6225",
   /** Canlı site — domain bağlandıktan sonra https://cozumai.com */
   siteUrl: "https://cozumai.com",
   linkedInUrl: "",
-  githubUrl: "",
+  twitterUrl: "",
   calendlyUrl: "",
   phoneTel: "+905396965983",
   phoneDisplay: "+90 539 696 59 83",
   trustLine: "İlk dönüş: iş günü içinde · NDA hazır · Uzaktan, yazılı süreç",
 
   stats: [
-    { value: "10+", label: "canlı / pilot proje" },
-    { value: "4", label: "uzmanlık alanı" },
-    { value: "%40", label: "ön ödeme (başlangıç)" },
+    { value: "%32", label: "Manuel iş azaldı" },
+    { value: "%45", label: "Yanıt süresi azaldı" },
+    { value: "7/24", label: "Sistem izlemede" },
+    { value: "%98+", label: "Müşteri memnuniyeti" },
   ],
 
   /** Ana hizmet sütunları — HTML’deki kartlarla eşleşir */
@@ -30,7 +31,7 @@ window.SITE_CONFIG = {
       id: "mobil",
       title: "Mobil uygulama geliştirme",
       summary:
-        "iOS ve Android için native hissi veren, mağaza onayına hazır uygulamalar. MVP’den kurumsal sürüme.",
+        "iOS ve Android için native hissi veren, mağaza onayına hazır uygulamalar geliştiriyoruz. MVP’den kurumsal sürüme.",
       highlights: [
         "Flutter / React Native veya platform-native",
         "Çevrimdışı senkron, push, biyometrik giriş",
@@ -42,7 +43,7 @@ window.SITE_CONFIG = {
       id: "web",
       title: "Web sitesi & web uygulaması",
       summary:
-        "Kurumsal vitrin, SaaS panelleri ve müşteri portalları. Hızlı, erişilebilir, SEO dostu.",
+        "Kurumsal vitrin, SaaS panelleri ve müşteri portalları inşa ediyoruz. Hızlı, erişilebilir, SEO dostu.",
       highlights: [
         "Next.js / React ile performans odaklı arayüz",
         "Yönetim paneli, rol tabanlı erişim",
@@ -54,7 +55,7 @@ window.SITE_CONFIG = {
       id: "ai",
       title: "AI entegrasyon hizmetleri",
       summary:
-        "LLM, otomasyon ve akıllı arama ile iş süreçlerinizi hızlandırın — güvenli ve ölçülebilir.",
+        "LLM, otomasyon ve akıllı arama ile iş süreçlerinizi hızlandırıyoruz — güvenli ve ölçülebilir.",
       highlights: [
         "Sohbet asistanı, doküman Q&A, özetleme",
         "Mevcut ürüne API / webhook entegrasyonu",
@@ -66,7 +67,7 @@ window.SITE_CONFIG = {
       id: "veri",
       title: "Veri analizi & finansal raporlama",
       summary:
-        "Ham veriyi karar verilebilir panolara dönüştürün. Finans, operasyon ve KPI takibi.",
+        "Ham veriyi karar verilebilir panolara dönüştürüyoruz. Finans, operasyon ve KPI takibi.",
       highlights: [
         "Excel / ERP / API kaynaklı ETL",
         "Canlı dashboard ve dönemsel raporlar",

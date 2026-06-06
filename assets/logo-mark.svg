@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="ÇözümAI">
+  <defs>
+    <linearGradient id="czLogoGrad" x1="50" y1="6" x2="50" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38DDF5"/>
+      <stop offset="42%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M72 24C46 16 24 32 24 54C24 74 40 88 62 84"
+    stroke="url(#czLogoGrad)"
+    stroke-width="14"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    d="M62 84L74 94"
+    stroke="url(#czLogoGrad)"
+    stroke-width="14"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    d="M36 38H50L56 32H74"
+    stroke="url(#czLogoGrad)"
+    stroke-width="4.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="74" cy="32" r="4.2" fill="#38DDF5"/>
+  <path d="M36 52H70" stroke="url(#czLogoGrad)" stroke-width="4.8" stroke-linecap="round"/>
+  <circle cx="70" cy="52" r="4.2" fill="#38DDF5"/>
+  <path d="M36 64H58" stroke="url(#czLogoGrad)" stroke-width="4.8" stroke-linecap="round"/>
+  <circle cx="58" cy="64" r="4.2" fill="#38DDF5"/>
+</svg>

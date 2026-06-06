@@ -8,7 +8,7 @@
   const siteTags = document.querySelectorAll("[data-site-tag], [data-site-tag-hero], [data-site-tag-footer]");
   const emailAnchors = document.querySelectorAll("[data-email]");
   const linkedIn = document.querySelector("[data-linkedin]");
-  const github = document.querySelector("[data-github]");
+  const twitter = document.querySelector("[data-twitter]");
   const year = document.querySelector("[data-year]");
   const form = document.querySelector("[data-brief-form]");
   const hint = document.querySelector("[data-form-hint]");
@@ -64,13 +64,7 @@
 
   if (cfg.tagline) {
     siteTags.forEach((el) => {
-      if (el.hasAttribute("data-site-tag-hero")) {
-        el.textContent = `${cfg.tagline} · Uzaktan`;
-      } else if (el.hasAttribute("data-site-tag-footer")) {
-        el.textContent = `${cfg.tagline} · Uzaktan · Türkiye`;
-      } else {
-        el.textContent = cfg.tagline;
-      }
+      el.textContent = cfg.tagline;
     });
   }
 
@@ -81,27 +75,19 @@
     });
   }
 
-  if (linkedIn) {
-    if (isHttpUrl(cfg.linkedInUrl)) {
-      linkedIn.href = cfg.linkedInUrl.trim();
-      linkedIn.textContent = "LinkedIn";
-      linkedIn.rel = "noopener noreferrer";
-      linkedIn.hidden = false;
+  const bindSocialLink = (el, url) => {
+    if (!el) return;
+    if (isHttpUrl(url)) {
+      el.href = url.trim();
+      el.rel = "noopener noreferrer";
+      el.hidden = false;
     } else {
-      linkedIn.hidden = true;
+      el.hidden = true;
     }
-  }
+  };
 
-  if (github) {
-    if (isHttpUrl(cfg.githubUrl)) {
-      github.href = cfg.githubUrl.trim();
-      github.textContent = "GitHub";
-      github.rel = "noopener noreferrer";
-      github.hidden = false;
-    } else {
-      github.hidden = true;
-    }
-  }
+  bindSocialLink(linkedIn, cfg.linkedInUrl);
+  bindSocialLink(twitter, cfg.twitterUrl);
 
   setMetaUrl(cfg.siteUrl);
   updateJsonLd(cfg.siteUrl);
@@ -215,7 +201,6 @@
       () => {
         const scrolled = window.scrollY > 24;
         header.dataset.scrolled = scrolled ? "true" : "false";
-        header.classList.toggle("header--light", scrolled);
       },
       { passive: true },
     );
@@ -324,7 +309,7 @@
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.textContent = "Gönder";
+          submitBtn.textContent = "Gönder & Görüşme Talep Et →";
         }
       }
     });
